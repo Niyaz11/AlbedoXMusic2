@@ -1,13 +1,10 @@
-# Use a stable Python version (latest might break some libs)
 FROM python:3.12-slim
 
-# Set working directory inside the container
-WORKDIR /app
+ENV DEBIAN_FRONTEND=noninteractive
 
-# Copy dependency list first (for efficient caching)
+WORKDIR /app
 COPY requirements.txt .
 
-# Install system dependencies
 RUN apt-get update -y && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends ffmpeg curl unzip bash \
     && apt-get clean \
