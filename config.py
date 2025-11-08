@@ -5,26 +5,26 @@ load_dotenv()
 
 class Config:
     def __init__(self):
-        self.API_ID = int(getenv("API_ID", 0))
-        self.API_HASH = getenv("API_HASH")
+        self.API_ID = int(getenv("API_ID", 29245477))
+        self.API_HASH = getenv("0abc83883262245c90ca337b7a0375c4")
 
-        self.BOT_TOKEN = getenv("BOT_TOKEN")
-        self.MONGO_URL = getenv("MONGO_URL")
+        self.BOT_TOKEN = getenv("8360416637:AAGjdc-snsZpaCKATMZeCm1hXBU22VH4_1s")
+        self.MONGO_URL = getenv("mongodb+srv://phrolovaxrobot:p0SFEz825QuqzwTi@cluster0.sy26fqm.mongodb.net/?retryWrites=true&w=majority")
 
-        self.LOGGER_ID = int(getenv("LOGGER_ID", 0))
-        self.OWNER_ID = int(getenv("OWNER_ID", 0))
+        self.LOGGER_ID = int(getenv("LOGGER_ID", -1002456565415))
+        self.OWNER_ID = int(getenv("OWNER_ID", 7654385403))
 
-        self.SESSION1 = getenv("SESSION", None)
+        self.SESSION1 = getenv("BQFnJzYAB4GU36CiFyCAZSMA6XV6Kt6UXNwFlK3mDROMWjehifYw-BpiKT-iK4benswKx_WysIeUDzvAclj6n9ytVeuQj1N318I2rlVy7YNqSTQfLvnuMeXqC--0cXcuBLkDgq-9E4uEcddedzS2CwU9LL7zL-NeV_kRGtaHeHsSZNbY8zD8EQ51sMsLKoqFdnGvgXyEVQ3Hra8ZXYIkZT4Cy0cSBkUIFbX0gp87SPMHD2UEZzgFJuPqbs33_7gxIcfmtCHRpOzR-7oJDNYHlDANqPa0xxWaNxXYI7oEMjC3xY-GDJjT8J9exPgGP5B8T4_wYWfbQNA5ZaGBg-cnJMld2HM5MwAAAAHY2x8OAA")
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 
-        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
-        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
+        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AnimeNexusNetwork/160")
+        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/EternalsHelplineBot")
 
-        self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", False)
-        self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://te.legra.ph/file/3e40a408286d4eda24191.jpg")
-        self.PING_IMG = getenv("PING_IMG", "https://files.catbox.moe/haagg2.png")
-        self.START_IMG = getenv("START_IMG", "https://files.catbox.moe/zvziwk.jpg")
+        self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", True)
+        self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://files.catbox.moe/stslbq.jpg")
+        self.PING_IMG = getenv("PING_IMG", "https://files.catbox.moe/stslbq.jpg")
+        self.START_IMG = getenv("START_IMG", "https://files.catbox.moe/stslbq.jpg")
         self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", True)
 
     def check(self):
