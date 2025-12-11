@@ -25,9 +25,9 @@ class Config:
         self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Makima_Bots")
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Anime_Chatting_Groups")
 
-        self.AUTO_END: bool = getenv("AUTO_END", False)
+        self.AUTO_END: bool = getenv("AUTO_END", True)
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", True)
-        self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", False)
+        self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", True)
         self.COOKIES_URL = [
             url for url in getenv("COOKIES_URL", "https://batbin.me/bractea").split(" ")
             if url and "batbin.me" in url
